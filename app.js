@@ -1,16 +1,15 @@
-const getHeroes = (idx, callback3)=>{
-
+const getHeroes = (idx, callb)=>{
     const heroe = {
         idx,
         nombre:'gambito',
     }
 
        setTimeout(() => {
-        callback3(heroe)
+        callb(heroe)
        },1500);
     }
 
-    getHeroes(6,(heroe)=>{
-        console.log(heroe.idx);
-        console.log(heroe.nombre);
+    getHeroes(6,(h)=>{
+        console.log(h.idx);
+        console.log(h.nombre);
     });
